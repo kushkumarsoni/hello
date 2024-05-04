@@ -1,0 +1,5 @@
+Route::get('/apple-app-site-association', function () {
+    return response()->file(public_path('ios/apple-app-site-association.json'), [
+        'Content-Type' => 'application/json',
+    ]);
+});
